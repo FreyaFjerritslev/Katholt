@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="da">
+ 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation Bar</title>
+    <link rel="stylesheet" href="Praktiske oplysninger-b.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light+Two&display=swap" rel="stylesheet">
+    
+    
+
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <a href="#">
+                <img src="Fotos/Artboard 1.png" alt="Logo">
+                
+                  </div>
+            
+            </a>
+        </div>
+   
+        <!-- Navigation Links (De synlige 4 links) -->
+        <ul class="visible-links">
+            <li><a href="#Forside">Forside</a></li>
+            <li><a href="#OmKatholt">Om Katholt</a></li>
+            <li><a href="#Børnehave">Børnehave</a></li>
+            <li><a href="#Fritidshjem">Fritidshjem</a></li>
+        </ul>
+   
+        <!-- Burgermenu -->
+        <div class="burger">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+   
+        <!-- Skjulte links (i burgerbaren) -->
+        <ul class="hidden-links">
+            <li><a href="#IndskrivningUdmeldelseogTakster">Indskrivning, Udmeldelse og Takster</a></li>
+            <li><a href="#Stamkort/Børneintranet">Stamkort/Børneintranet</a></li>
+            <li><a href="#Pædagogisktilsyn">Pædagogisk tilsyn</a></li>
+        </ul>
+    </nav>
+   
+</html>
+ 
+   <!-- JavaScript for Burger Menu -->
+   <script>
+// Vælg burgermenu og hidden-links
+const burger = document.querySelector('.burger');
+const hiddenLinks = document.querySelector('.hidden-links');
+ 
+// Klik på burgermenuen for at vise/skjule de skjulte links
+burger.addEventListener('click', () => {
+    hiddenLinks.classList.toggle('active');
+    burger.classList.toggle('open');
+});
+</script>
+ 
+<img class="tøj" src="Fotos/Firefly a picture of kids clothes hanging 57454.jpg"  alt="Beskrivelse af billede"> 
+<!-- Dark overlay effect -->
+<div class="overlay"></div>
+
+<!--Selve brødteksten og overskrifter-->
+
+<h1 class="heading">Praktiske oplysninger for børnehaven</h1>
+
+<p class="text"> Påklædning</p>
+<p class="subheading" >Da vi er mange børn i børnehaven, er det vigtigt, at børnenes
+tøj og ting er<br> tydeligt mærket med navn, da det ellers kan<!--BR gør så teksten starter på en ny linje-->
+være svært for os at hitte rede<br> i tingene.</p>
+
+<p class="subheading" >Det er vigtigt, at børnene er godt klædt på, alt efter vejrforholdene, ligesom de<br> hver dag skal
+    medbringe skiftetøj, regntøj og gummistøvler. 
+    Både vores legeplads,<br> skoven og naturen omkring
+    børnehaven bruges flittigt - derfor</p><br>
+
+<p class="subheading" >HUSK!!! rigeligt med skiftetøj - og vi vil pointere at 
+    det ikke er nødvendigt at vaske<br> overtøj flere gange 
+    ugentligt - blot det er tørt. Flyverdragten behøver 
+    ikke at vaskes<br> særligt tit, da man vasker imprægneringen af og en flyverdragt må heller ikke komme<br>  
+    i varmeskab og tørretumbler. Det er en god ide' at børnene har en uldsål i støvlerne,<br> så de kan holde
+    kulden ude og en god windstopper eller en uldtrøje inden under<br> flyverdragten. Hanskerne skal kunne
+     gå udenover flyverdragten og en elefanthue, som kan komme godt ned i flyvedragten.</p><br>
+
+<p class="subheading" >Vær opmærksom på at snor i børnenes tøj udskiftes til f.eks. velcro-bånd eller elastik af hensyn til
+børnenes sikkerhed.</p>
+
+<img class="pige" src="Fotos/Skærmbillede 2024-12-09 kl. 09.40.41.png"  alt="Oplysninger pige"> 
+
+<p class="text2">Legetøj</p>
+<p class="subheading2"> Børnene må gerne tage legetøj, en bog eller en 
+    CD med i børnehaven<br> og dele glæden med de 
+    andre børn (husk at skrive navn på).</p>
+
+<p class="subheading2">Det er på børnenes og forældrenes eget ansvar, 
+når de medbringer<br>legetøj. Geværer og pistoler 
+m.v. må gerne medbringes, men vi har <br> 
+våbenhvile i huset,så al leg med våben foregår 
+ude på legepladsen.</p>
+
+<img class="Legetøj" src="Fotos/pexels-markusspiske-978710.jpg" alt="sand">
+
+<!-- Alt nedestående er til footeren-->
+<img src="Fotos/k.png" alt="Image" class="above-footer-image"> <!--Billedet til over footeren-->
+
+<div class="grey-box">
+<h2 class="heading2"> Kontaktoplysninger</h2> <!--Overskrift-->
+<h3 class="heading3">Børnegården Katholt</h3> <!--Underoverskrift-->
+<p class="subheading3"><br>Amagervej 140-142, 6900 Skjern<br></p> <!--Selve teksten-->
+
+<h4 class="heading4">Telefon Børnehave:</h4>
+<p class="subheading4">34789011</p>
+<h5 class="heading5">Telefon Fritidshjem:</h5>
+<p class="subheading5">34781266</p>
+
+<h6 class="heading6">E-mail:</h6>
+<p class="subheading6">Martin@Børnegården.dk</p>
+
+<div class="heading7">Åbningstider</h7> <!--Overskrift alt med heading er overskrift-->
+<div class="subheading8">Åbningstider i børnehaven</h8> <!--Tekst og underoverskrift alt med subheading-->
+<p class="subheading9">Mandag-torsdag fra kl. 6.30-16.30
+<div class="subheading91">Fredag 6.30-16.00</p>
+
+<div class="subheading10">Åbningstider i fritidshjemmet</div>
+<div class="subheading11">Mandag-torsdag fra 6.30-7.45 og 12.50-16.30
+<div class="subheading12">Fredag fra 6.30-7.45 og 12.50-16.00</div>
+
+<div class="subheading13">Lukkedage</div>
+<div class="subheading14">Lørdag-søndag</div> 
+
+<div class="heading15">Læs mere</div>
+<div class="subheading16">Om Katholt <br>Børnehave <br>Fritidshjem 
+<div class="subheading17">Indskrivning, Udmeldelse
+<div class="subheading171">og Takster</div> 
+
+<div class="heading18">Stamkort/børneintranet
+<div class="subheading19">Pædagogisk tilsyn</div>
+
+
+    
+
+</div>
