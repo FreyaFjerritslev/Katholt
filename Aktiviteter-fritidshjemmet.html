@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="da">
+ 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation Bar</title>
+    <link rel="stylesheet" href="Aktiviteter-fritidshjemmet.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light+Two&display=swap" rel="stylesheet">
+    
+    
+
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <a href="#">
+                <img src="Fotos/Artboard 1.png" alt="Logo">
+                
+                  </div>
+            
+            </a>
+        </div>
+   
+        <!-- Navigation Links (De synlige 4 links) -->
+        <ul class="visible-links">
+            <li><a href="#Forside">Forside</a></li>
+            <li><a href="#OmKatholt">Om Katholt</a></li>
+            <li><a href="#Børnehave">Børnehave</a></li>
+            <li><a href="#Fritidshjem">Fritidshjem</a></li>
+        </ul>
+   
+        <!-- Burgermenu -->
+        <div class="burger">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+   
+        <!-- Skjulte links (i burgerbaren) -->
+        <ul class="hidden-links">
+            <li><a href="#IndskrivningUdmeldelseogTakster">Indskrivning, Udmeldelse og Takster</a></li>
+            <li><a href="#Stamkort/Børneintranet">Stamkort/Børneintranet</a></li>
+            <li><a href="#Pædagogisktilsyn">Pædagogisk tilsyn</a></li>
+        </ul>
+    </nav>
+   
+</html>
+ 
+   <!-- JavaScript for Burger Menu -->
+   <script>
+// Vælg burgermenu og hidden-links
+const burger = document.querySelector('.burger');
+const hiddenLinks = document.querySelector('.hidden-links');
+ 
+// Klik på burgermenuen for at vise/skjule de skjulte links
+burger.addEventListener('click', () => {
+    hiddenLinks.classList.toggle('active');
+    burger.classList.toggle('open');
+});
+</script>
+ 
+<img class="tøj" src="Fotos/Aktiviteter i fritidshjemmet.png"  alt="Beskrivelse af billede"> 
+<!-- Dark overlay effect -->
+<div class="overlay"></div>
+
+<!--Selve brødteksten og overskrifter-->
+
+<h1 class="heading">Aktiviteter i fritidshjemmet</h1>
+
+<h2 class="subheading">Aktiviteter</h2>
+<h3 class="subheading2">Vi har lukket på følgende dage</h3>
+
+<img class="barnfoside" src="Fotos/Aktiviteter.png" alt="Beskrivelse af billede">
+
+
+
+<p class="text">Der er bl.a.:</p><br>
+<p class="text">Ler, træ-, kreativværksted, legorum, barbierum,<br> kælder med puderum, gymnastiksalen,<br> danse- rum, dyrerum.</p><br><br>
+<p class="text"> Mange forskelligespil og bøger.</p><br><br>
+<p class="text">Leg ude og inde (boldspil, bygge huler, bålsted, skoven, åbenværksted m.m.).</p><br>
+<p class="text">Vores Salen er til planlagt og spontan aktivitet. </p><br><br><br>
+<p class="text">Der lægges vægt på, at børnene får plads og ro til fordybelse. Samtidigt stilles der krav om, at påbegyndte aktiviter færdiggøres. <br> Processen prioriteres frem for produktet, samtidigt med stilles alderssvarende krav om at yde sit bedste.</p>
+
+
+
+
+
+
+<!-- Alt nedestående er til footeren-->
+<img src="Fotos/Figur.E.png" alt="Image" class="above-footer-image"> <!--Billedet til over footeren-->
+
+<div class="grey-box">
+<h2 class="heading2"> Kontaktoplysninger</h2> <!--Overskrift-->
+<h3 class="heading3">Børnegården Katholt</h3> <!--Underoverskrift-->
+<p class="subheading3"><br>Amagervej 140-142, 6900 Skjern<br></p> <!--Selve teksten-->
+
+<h4 class="heading4">Telefon Børnehave:</h4>
+<p class="subheading4">34789011</p>
+<h5 class="heading5">Telefon Fritidshjem:</h5>
+<p class="subheading5">34781266</p>
+
+<h6 class="heading6">E-mail:</h6>
+<p class="subheading6">Martin@Børnegården.dk</p>
+
+<div class="heading7">Åbningstider</h7> <!--Overskrift alt med heading er overskrift-->
+<div class="subheading8">Åbningstider i børnehaven</h8> <!--Tekst og underoverskrift alt med subheading-->
+<p class="subheading9">Mandag-torsdag fra kl. 6.30-16.30
+<div class="subheading91">Fredag 6.30-16.00</p>
+
+<div class="subheading10">Åbningstider i fritidshjemmet</div>
+<div class="subheading11">Mandag-torsdag fra 6.30-7.45 og 12.50-16.30
+<div class="subheading12">Fredag fra 6.30-7.45 og 12.50-16.00</div>
+
+<div class="subheading13">Lukkedage</div>
+<div class="subheading14">Lørdag-søndag</div> 
+
+<div class="heading15">Læs mere</div>
+<div class="subheading16">Om Katholt <br>Børnehave <br>Fritidshjem 
+<div class="subheading17">Indskrivning, Udmeldelse
+<div class="subheading171">og Takster</div> 
+
+<div class="heading18">Stamkort/børneintranet
+<div class="subheading19">Pædagogisk tilsyn</div>
+
+
+    
+
+</div>
