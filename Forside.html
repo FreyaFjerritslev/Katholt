@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation Bar</title>
+    <link rel="stylesheet" href="forside.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light+Two&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <a href="#">
+                <img src="Fotos/Artboard 1.png" alt="Logo">
+            </a>
+        </div>
+    
+        <!-- Navigation Links (De synlige 4 links) -->
+        <ul class="visible-links">
+            <li><a href="#Forside">Forisde</a></li>
+            <li><a href="#OmKatholt">Om Katholt</a></li>
+            <li><a href="#Børnehave">Børnehave</a></li>
+            <li><a href="#Fritidshjem">Fritidshjem</a></li>
+        </ul>
+    
+        <!-- Burgermenu -->
+        <div class="burger">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    
+        <!-- Skjulte links (i burgerbaren) -->
+        <ul class="hidden-links">
+            <li><a href="#Forside">Forisde</a></li>
+            <li><a href="#OmKatholt">Om Katholt</a></li>
+            <li><a href="#Børnehave">Børnehave</a></li>
+            <li><a href="#Fritidshjem">Fritidshjem</a></li>
+            <li><a href="#IndskrivningUdmeldelseogTakster">Indskrivning, Udmeldelse og Takster</a></li>
+            <li><a href="#Stamkort/Børneintranet">Stamkort/Børneintranet</a></li>
+            <li><a href="#Pædagogisktilsyn">Pædagogisk tilsyn</a></li>
+        </ul>
+    </nav>
+    
+</html>
+
+   <!-- JavaScript for Burger Menu -->
+   <script>
+// Vælg burgermenu og hidden-links
+const burger = document.querySelector('.burger');
+const hiddenLinks = document.querySelector('.hidden-links');
+
+// Klik på burgermenuen for at vise/skjule de skjulte links
+burger.addEventListener('click', () => {
+    hiddenLinks.classList.toggle('active');
+    burger.classList.toggle('open');
+});
+</script>
+
+<h1>Velkommen til Børnegården Katholt</h1>
+    <button class="læsmere" onclick="window.location.href='Børnehave';">Læs mere om børnehaven</button>
+    <button class="læsmere2" onclick="window.location.href='fritidshjem';">Læs mere om fritidshjem</button>
+
+
+    <div class="video-container">
+        <video autoplay muted loop>
+            <source src="Vid/Forside vid.mp4" type="video/mp4">
+            <source src="Vid/Forside vid.mp4" type="video/ogg">
+            Your browser does not support the video tag.
+        </video>
+        <div class="overlay"></div>
+    </div>
+  
+
+    <div class="tekstfoto-container">
+        <div class="text-content">
+            <h2>
+                Katholt er en privat børnehave <br>
+                og fritidshjem i Skjern
+            </h2>
+        </div>
+    
+        <div class="text-description">
+            <p>
+                Børnegården Katholt er en privat, aldersintegreret.<br>
+                Vestjylland, med plads til 175 børn i både børnehave og fritidshjem. Institutionen er i.<br>
+                løbende udvikling med fokus på at skabe de bedste rammer for leg, læring og trivsel.
+            </p>
+        </div>
+    
+        <div class="flex-container">
+            <div class="image-container">
+                <img class="barnfoside" src="Fotos/Barn Forside.jpg" alt="Beskrivelse af billede">
+                <img class="Figurpige" src="Fotos/h.png" alt="Beskrivelse af billede">
+            </div>
+            
+        </div>
+
+        <button class="Tilmelding" onclick="window.location.href='Tilmelding';">Tilmelding</button>
+        
+
+    
+    
+        
+
+    
+    <h3> Mød os i Katholt</h3>
+    <div class="pædagog-container">
+        <div class="pædagog-item">
+            <img src="Fotos/Pædagog.jpg" alt="Pædagog 1">
+            <p>Louise</p>
+            <div class="title-box">
+                <span class="box-title">Pædagog</span>
+            </div>
+        </div>
+        <div class="pædagog-item">
+            <img src="Fotos/Pædagog2.jpg" alt="Pædagog 2">
+            <p>Mette</p>
+            <div class="title-box">
+                <span class="box-title">Pædagog</span>
+            </div>
+        </div>
+        <div class="pædagog-item">
+            <img src="Fotos/Pædagog3.jpg" alt="Pædagog 3">
+            <p>Henrik</p>
+            <div class="title-box">
+                <span class="box-title">Pædagog</span>
+            </div>
+        </div>
+        <div class="pædagog-item">
+            <img src="Fotos/Pædagog4.jpg" alt="Pædagog 4">
+            <p>Martin</p>
+            <div class="title-box">
+                <span class="box-title">Leder</span>  
+            </div>
+        </div>
+    </div>
+
+    
