@@ -1,0 +1,466 @@
+/* --- Reset --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body { /* ---Gør så siden ikke rykker sig overhovedet ---*/
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    width: 100%;
+  }
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+ 
+/* --- Navbar Styling --- */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 15px 30px;
+    position: relative;
+    font-weight: bold;
+
+    
+    
+  }
+/* Logo */
+.navbar .logo {
+    margin-left: left; /* Flytter logoet til højre */
+}
+ 
+.navbar .logo a {
+    text-decoration: none;
+    color: #000;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+ 
+/* --- Synlige Links --- */
+.visible-links {
+    font-weight: bold;
+    display: flex;
+    gap: 40px;
+    margin-left: 450px;
+}
+ 
+.visible-links li {
+    list-style: none;
+}
+ 
+.visible-links a {
+    text-decoration: none;
+    color: #333;
+    font-size: 1rem;
+    font-weight: 550;
+    transition: color 0.3s ease-in-out;
+}
+ 
+.visible-links a:hover {
+    color: #e60000;
+}
+ 
+/* --- Skjulte Links --- */
+.hidden-links {
+    display: none; /* Skjuler de skjulte links som standard */
+    flex-direction: column;
+    position: absolute;
+    top: 70px;
+    right: 30px;
+    background-color: #888686;
+    width: 200px;
+    padding: 20px;
+    gap: 15px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+ 
+.hidden-links li {
+    list-style: none;
+}
+ 
+.hidden-links a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: color 0.3s ease-in-out;
+}
+ 
+.hidden-links a:hover {
+    color: #e60000;
+}
+ 
+/* Viser skjulte links, når burgermenuen åbnes */
+.hidden-links.active {
+    display: flex;
+}
+ 
+/* --- Burger Styling --- */
+.burger {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+    margin-left: 20px;
+}
+ 
+.burger div {
+    width: 30px;
+    height: 3px;
+    background-color: #000;
+    transition: transform 0.3s ease;
+}
+ 
+/* Åben burger-menu styling */
+.burger.open div:nth-child(1) {
+    transform: rotate(45deg);
+    position: relative;
+    top: 7px;
+}
+ 
+.burger.open div:nth-child(2) {
+    opacity: 0;
+}
+ 
+.burger.open div:nth-child(3) {
+    transform: rotate(-45deg);
+    position: relative;
+    top: -7px;
+}
+ 
+/* --- Responsiv Styling --- */
+@media (max-width: 768px) {
+    /* Synlige links arrangeres vertikalt på små skærme */
+    .visible-links {
+        display: none;
+    }
+ 
+    .burger {
+        display: flex;
+    }
+}
+   
+ 
+ 
+.logo {
+    display: flex; /* Gør logo bliver til flex, bliver i navbar og er lige med links.  */
+    align-items: center; /* Centrer logo på små skærme */
+}
+ 
+/* Image Section Styling */
+.tøj {
+    width: 100%;
+    height: 470px;
+    margin: 2px 0;
+    
+}
+    .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 0%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
+      }
+
+.heading {
+    position: absolute; /* Position it absolutely within the parent */
+    top: 40%; /* Center it vertically */
+    left: 37%; /* Center it horizontally */
+    transform: translate(-65%, -50%); /* Adjust for exact centering */
+    color: white; /* Text color */
+    font-size: 3.5rem; /* Adjust font size as needed */
+} 
+
+.subheading {
+    font-size: 40px; /* Adjust heading font size */
+    color: #006653; /* Dark grey text */
+    margin-top: 100px;
+    transform: translate(5%, 5%);
+}
+
+.subheading2 {
+    margin-top: 35px;
+    font-size: 20px; /* Adjust heading font size */
+    color: #333; /* Dark grey text */
+    transform: translate(5%, 5%);
+    font-weight: bold;
+}
+
+
+.text {
+    font-size: 20px; /* Adjust heading font size */
+    color: #333; /* Dark grey text */
+    transform: translate(5%, 5%);
+    
+}
+
+
+
+
+.barnfoside {
+    position: absolute;
+    width: 510px; /* Sætter billedets bredde til 200px */
+    height: 366px; /* Sætter billedets højde til 200px */
+    border-radius: 25px; /* Tilføjer rundede hjørner */
+    margin-left: 60%;
+    margin-top: -4%;
+}
+
+
+
+
+
+        .above-footer-image {
+            height: 225px;
+            position: flex; 
+            margin-bottom: -335px; /* Adjust to place the image on the footer's top line */
+            margin-left: 60%; /* Centers the image horizontally */
+            transform: translateX(130%); /* Adjusts the image to truly center */
+            
+        
+        }
+        .grey-box {
+            background-color: #ccc; 
+            color: #333;
+            padding: 40px; /* Laver mellemrum i footeren */
+            text-align: center; /* Centre teksten i footeren */
+            position: relative; /* Footer bliver ved med at stå i bunden */
+            margin-top: 300px; /* Laver plads over footeren */
+            height: 660px; 
+            width: -700px; 
+            display: block;
+        }
+          
+          /* Body content styling for spacing */
+          body {
+            margin: 0;
+            padding: 0 0px; /* Laver padding */
+          }
+
+          .heading2{
+    font-size: 20px; 
+    color: #333; 
+    margin-left: -1100px;
+    
+    
+          }
+        .heading3{
+            font-size: 20px; 
+            color: #333; 
+            margin-left: -1090px;
+            margin-top: 50px;
+            margin-bottom: -45px;
+            
+
+        }
+    .subheading3{
+        font-size: 20px; 
+        color: #333; 
+        margin-left: -1010px;
+        margin-top: 30px;
+      
+    }
+
+
+        .heading4{
+            font-size: 20px; 
+            color: #333; 
+            margin-left: -1090px;
+            margin-top: 50px;
+            margin-bottom: -45px; 
+        }
+
+       .subheading4{
+        font-size: 20px; 
+        color: #333; 
+       margin-left: -800px; /* Gør så den bliver skubbet ned */
+       margin-top: 22px; 
+      display: block;
+
+       }
+
+       .heading5{
+        font-size: 20px; 
+            color: #333; 
+            margin-left: -1080px;
+            margin-top: 20px;
+            margin-bottom: -45px; 
+        }
+
+    .subheading5{
+        font-size: 20px; 
+        color: #333; 
+       margin-left: -785px; 
+       margin-top: 22px; 
+      display: block; 
+    }
+      .heading6{
+        font-size: 20px; 
+            color: #333; 
+            margin-left: -1210px;
+            margin-top: 20px;
+            margin-bottom: -50px;
+      }
+
+      .subheading6{
+        font-size: 20px; 
+        color: #333; 
+       margin-left: -915px; 
+       margin-top: 25px; 
+    }
+       .container {
+        overflow: visible; 
+        padding: 0;
+        margin: 0;
+        height: auto;
+      }
+
+      .heading7{
+            font-size: 20px;
+            color: #333;
+            font-weight: bold;
+            position: relative;
+            margin-left: -180px;
+            top: -295px; /* gør så overskriften kommer op og stå i toppen */
+            display: block;
+        }
+        .subheading8{
+            font-size: 20px; 
+            color: #333; 
+            font-weight: bold;
+            margin-left: 135px;
+            position: relative;
+            display: block; /* Gør så det er blok element */
+            margin-top: 40px; /* Laver plads mellem heading7 og heading8.*/
+        }    
+
+        .subheading9{
+            font-size: 20px; 
+            color: #333; 
+            font-weight: normal;
+            margin-left: 35px;
+            position: relative; 
+            margin-top: 0px; 
+        
+        }
+    
+    .subheading91{
+        font-size: 20px; 
+            color: #333; 
+            font-weight: normal;
+            margin-left: -100px;
+            position: relative; 
+            margin-top: 5px; 
+
+    }
+     .subheading10{
+        font-size: 20px;
+            color: #333;
+            font-weight: bold;
+            position: relative;
+            margin-left: 125px;
+            top: 20px; /* gør så overskriften kommer op og stå i toppen */
+            display: block;
+     }
+     .subheading11{
+        font-size: 20px; 
+            color: #333; 
+            font-weight: normal;
+            margin-left: 230px;
+            position: relative;
+            display: block; 
+            margin-top: 20px; 
+        }    
+        .subheading12{
+            font-size: 20px; 
+            color: #333; 
+            font-weight: normal;
+            margin-left: -80px;
+            position: relative;
+            display: block; 
+            margin-top: 5px; 
+        }
+     
+.subheading13{
+    font-size: 20px;
+            color: #333;
+            font-weight: bold;
+            position: relative;
+            margin-left: -290px;
+            top: 30px; 
+            display: block;
+}
+   .subheading14{
+    font-size: 20px;
+            color: #333;
+            
+            position: relative;
+            margin-left: -265px;
+            top: 30px; /* gør så der kommer mellemrum mellem teksterne. */
+            display: block;
+   }
+      
+   .heading15{
+    font-size: 20px;
+            color: #333;
+            font-weight: bold;
+            position: relative;
+            margin-left: 800px;
+            top: -285px; /* gør så overskriften kommer op og stå i toppen */
+            display: block;
+        }
+        .subheading16{
+            font-size: 20px;
+                color: #333;
+                position: relative;
+                margin-left: 800px;
+                top: -254px; /* gør så der kommer mellemrum mellem teksterne. */
+                display: block;
+                line-height: 2.5;
+       }
+        
+    .subheading17{
+        font-size: 20px;
+                color: #333;
+                position: relative;
+                margin-left: 130px;
+                top: -5px; /* gør så der kommer mellemrum mellem teksterne. */
+                display: block;
+               
+    }
+    
+    .subheading171{
+        font-size: 20px;
+                color: #333;
+                position: relative;
+                line-height: 0;
+                margin-left: -130px;
+                top: 0px; /* gør så der kommer mellemrum mellem teksterne. */
+                display: block;
+                
+    }
+    .heading18{
+        font-size: 20px;
+                color: #333;
+                position: relative;
+                margin-left: -20px;
+                top: 25px; 
+                display: block;
+                
+    }
+    
+    .subheading19{
+        font-size: 20px;
+                color: #333;
+                position: relative;
+                margin-left: -45px;
+                top: 0px; /* gør så der kommer mellemrum mellem teksterne. */
+                display: block;
+    }
+        
