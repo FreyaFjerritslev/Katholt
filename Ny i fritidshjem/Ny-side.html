@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="da">
+ 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation Bar</title>
+    <link rel="stylesheet" href="Ny-side.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light+Two&display=swap" rel="stylesheet">
+    
+    
+ 
+</head>
+ 
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <a href="#">
+                <img src="Artboard 1 1.png" alt="Logo">
+                
+                  </div>
+            
+            </a>
+        </div>
+   
+        <!-- Navigation Links (De synlige 4 links) -->
+        <ul class="visible-links">
+            <li><a href="#Forside">Forisde</a></li>
+            <li><a href="#OmKatholt">Om Katholt</a></li>
+            <li><a href="#Børnehave">Børnehave</a></li>
+            <li><a href="#Fritidshjem">Fritidshjem</a></li>
+        </ul>
+   
+        <!-- Burgermenu -->
+        <div class="burger">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+   
+        <!-- Skjulte links (i burgerbaren) -->
+        <ul class="hidden-links">
+            <li><a href="#IndskrivningUdmeldelseogTakster">Indskrivning, Udmeldelse og Takster</a></li>
+            <li><a href="#Stamkort/Børneintranet">Stamkort/Børneintranet</a></li>
+            <li><a href="#Pædagogisktilsyn">Pædagogisk tilsyn</a></li>
+        </ul>
+    </nav>
+   
+</html>
+ 
+   <!-- JavaScript for Burger Menu -->
+   <script>
+// Vælg burgermenu og hidden-links
+const burger = document.querySelector('.burger');
+const hiddenLinks = document.querySelector('.hidden-links');
+ 
+// Klik på burgermenuen for at vise/skjule de skjulte links
+burger.addEventListener('click', () => {
+    hiddenLinks.classList.toggle('active');
+    burger.classList.toggle('open');
+});
+</script>
+ 
+
+
+<div class="Topbillede">
+
+    <h1 class="overskrift">Praktiske oplysninger for fritidshjemmet</h1>
+       
+
+</div>
+
+<div class="content"> 
+
+<div class="row">
+<div class="box content-1">
+<h3 class="conten-overskrift">Påklædning</h3>
+<p>Vi har ingen forsikring, der dækker private ejendele, 
+    såsom tøj, legetøj osv. Medbragt legetøj er på eget 
+    ansvar. Vi opfordrer til, at I sørger for, at børnene har tøj 
+    med til al slags vejr.
+    <br><br>
+    Børnene skal altid have skiftetøj liggende i fritids-
+hjemmet.
+<br><br>
+En fleece-trøje året rundt, anbefales varmt.
+    <br><br>
+    Husk at skrive navn i !!
+    <br><br>
+    Glemt tøj lægges i kommoden ved indgangen.
+    <br><br>
+
+Ved ikke afhentet glemt tøj afleveres det til genbrug.</p>
+</div>
+
+<div class="box content-2">
+    <img class="billede-2" src="Billede7.png" alt="krammer">
+</div>
+</div>
+
+<div class="row">
+
+
+<div class="box content-3">
+
+    <img class="Billede8" src="Billede8.png" alt="sammwnhold">
+</div>
+
+<div class="box content-4">
+
+<h3 class="conten-overskrift">Information</h3>
+
+    <p>
+        I garderoben hænger opslagstavlen med informationer. 
+Hold derfor altid øje med opslagstavlen + Alia vores 
+hjemmeside på www.boernegaardenkatholt.dk
+        <br><br>
+        Besker til personalet, skal vi senest have via Alia 
+        kl. 12.00 dagligt, da vi registrerer inden alle børn 
+        kommer fra skole.
+        <br><br>
+        Husk at meddele, hvis der forekommer ændringer i 
+        stamkortoplysningerne (telefon nr., adresse, arbejde,
+        mailadresse o.s.v.)
+        <br><br>
+        Vær dagligt opmærksom på evt. nye informationer 
+tilsendes pr. mail, opgiv derfor jeres mailadresse.</p>
+
+</div>
+</div>
+</div>
+
+<!-- Alt nedestående er til footeren-->
+
+
+<div class="footer">
+    <img src="Billede5.png" alt="Image" class="above-footer-image"> <!--Billedet til over footeren-->
+
+<div class="footer-box footer-1">
+
+<h5 class="footer-overskrift">Kontaktoplysninger</h5>
+
+<ul>
+    <li><b>Børnegården Katholt</b></li>
+    <li>Amagervej 140-142, 6900 Skjern</li>
+</ul>
+
+<ul>
+    <li><b>Telefon Børnehave:</b> 34789011</li>
+    <li><b>Telefon Fritidshjem:</b> 34781266</li>
+    
+</ul>
+
+<ul>
+    <li><b>E-mail:</b> Martin@Børnegården.dk</li>
+</ul>
+
+</div>
+
+<div class="footer-box footer-2">
+<h5 class="footer-overskrift">Åbningstider</h5>
+
+<ul>
+    <li><b>Åbningstider i børnehaven</b></li>
+    <li>Mandag-torsdag fra kl. 6.30-16.30</li>
+    <li>Fredag 6.30-16.00</li>
+</ul>
+
+<ul>
+    <li><b>Åbningstider i fritidshjemmet</b></li>
+    <li>Mandag-torsdag fra 6.30-7.45 og 12.50-16.30</li>
+    <li>Fredag fra 6.30-7.45 og 12.50-16.00</li>
+</ul>
+
+<ul>
+    <li><b>Lukkedage</b></li>
+    <li>Lørdag-søndag</li>
+</ul>
+
+</div>
+
+<div class="footer-box footer-3">
+    <h5 class="footer-overskrift">Læs mere</h5>
+
+    <ul>
+        <li><a href="">Om Katholt</a></li>
+        <li><a href="">Børnehav</a></li>
+        <li><a href="">Fritidshjem</a></li>
+        <li><a href="">Indskrivning, udmeldelse og takster</a></li>
+        <li><a href="">Stamkort/børneintranet</a></li>
+        <li><a href="">Pædagogisk tilsyn</a></li>
+    </ul>
+    
+</div>
+</div>
+
+
+
+
+
+ 
+
+
+
