@@ -1,0 +1,543 @@
+/* --- Reset --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body { /* ---Gør så siden ikke rykker sig overhovedet ---*/
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    width: 100%;
+  }
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+ 
+/* --- Navbar Styling --- */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 15px 30px;
+    position: relative;
+    font-weight: bold;
+
+    
+    
+  }
+/* Logo */
+.navbar .logo {
+    margin-left: left; /* Flytter logoet til højre */
+}
+ 
+.navbar .logo a {
+    text-decoration: none;
+    color: #000;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+ 
+/* --- Synlige Links --- */
+.visible-links {
+    font-weight: bold;
+    display: flex;
+    gap: 40px;
+    margin-left: 450px;
+}
+ 
+.visible-links li {
+    list-style: none;
+}
+ 
+.visible-links a {
+    text-decoration: none;
+    color: #333;
+    font-size: 1rem;
+    font-weight: 550;
+    transition: color 0.3s ease-in-out;
+}
+ 
+.visible-links a:hover {
+    color: #e60000;
+}
+ 
+/* --- Skjulte Links --- */
+.hidden-links {
+    display: none; /* Skjuler de skjulte links som standard */
+    flex-direction: column;
+    position: absolute;
+    top: 70px;
+    right: 30px;
+    background-color: #888686;
+    width: 200px;
+    padding: 20px;
+    gap: 15px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+ 
+.hidden-links li {
+    list-style: none;
+}
+ 
+.hidden-links a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: color 0.3s ease-in-out;
+}
+ 
+.hidden-links a:hover {
+    color: #e60000;
+}
+ 
+/* Viser skjulte links, når burgermenuen åbnes */
+.hidden-links.active {
+    display: flex;
+}
+ 
+/* --- Burger Styling --- */
+.burger {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+    margin-left: 20px;
+}
+ 
+.burger div {
+    width: 30px;
+    height: 3px;
+    background-color: #000;
+    transition: transform 0.3s ease;
+}
+ 
+/* Åben burger-menu styling */
+.burger.open div:nth-child(1) {
+    transform: rotate(45deg);
+    position: relative;
+    top: 7px;
+}
+ 
+.burger.open div:nth-child(2) {
+    opacity: 0;
+}
+ 
+.burger.open div:nth-child(3) {
+    transform: rotate(-45deg);
+    position: relative;
+    top: -7px;
+}
+ 
+/* --- Responsiv Styling --- */
+@media (max-width: 768px) {
+    /* Synlige links arrangeres vertikalt på små skærme */
+    .visible-links {
+        display: none;
+    }
+ 
+    .burger {
+        display: flex;
+    }
+}
+ 
+.logo {
+    display: flex; /* Gør logo bliver til flex, bliver i navbar og er lige med links.  */
+    align-items: center; /* Centrer logo på små skærme */
+}
+.image {
+    width: 100%; /* Ensures the image takes up the full width of its container */
+    height: 470px; /* Sets a fixed height for the image */
+    margin: 2px 0; /* Adds some space around the image */
+    object-fit: cover; /* Ensures the image covers the area without distorting */
+    object-position: none; /* Centers the image within the box */
+
+}
+.overlay {
+    position: absolute;
+    top: 14%;
+    left: 0;
+    width: 100%;
+    height: 71%;
+    background-color: rgba(0, 0, 0, 0.5); /* Dark overlay */ 
+}
+.heading {
+    position: absolute; /* Position it absolutely within the parent */
+    top: 50%; /* Center it vertically */
+    left: 25%; /* Center it horizontally */
+    transform: translate(-50%, -50%); /* Adjust for exact centering */
+    color: white; /* Text color */
+    font-size: 3.5rem; /* Adjust font size as needed */
+} 
+.text{
+    font-size: 30px; /* Adjust heading font size */
+    color: #006653; /* Dark grey text */
+    margin-top: 200px;
+    transform: translate(3%, 3%);
+    font-weight: bold;
+    margin-left: 25px;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+  }
+  .box {
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 30px;
+    width: 700px;
+    height: 800px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    margin-left: -500px;
+    flex-direction: column;
+   
+  }
+
+
+  .headline1{
+    font-size: 20px; /* Adjust heading font size */
+    color: #006653; /* Dark grey text */
+    margin-top: 20px;
+    margin-bottom: 10px;
+    transform: translate(3%, 3%);
+    font-weight: bold;
+    margin-left: -20px;
+    
+}
+.Link1{
+    color: #0077cc;  /* Link text color */
+    font-weight: bold;  /* Make the link text bold */
+    font-size: 14px;  /* Font size for the links */
+    transition: color 0.3s ease;  /* Smooth color change on hover */
+    display: block;
+    margin-bottom: 10px;
+    
+}
+.Link1:hover{
+    color: #43a0ec;  /* Change the link color when hovered */
+}
+.Link2{
+    color: #0077cc;  /* Link text color */
+    font-weight: bold;  /* Make the link text bold */
+    font-size: 14px;  /* Font size for the links */
+    transition: color 0.3s ease;  /* Smooth color change on hover */
+    display: block;
+    margin-bottom: 10px;
+   
+}
+.Link2:hover{
+    color: #43a0ec;  /* Change the link color when hovered */
+}
+
+
+
+  .headline2{
+    font-size: 20px; /* Adjust heading font size */
+    color: #006653; /* Dark grey text */
+    margin-top: 30px;
+    margin-bottom: 10px;
+    transform: translate(3%, 3%);
+    font-weight: bold;
+    margin-left: -20px;
+  }
+.Link3{
+        color: #0077cc;  /* Link text color */
+        font-weight: bold;  /* Make the link text bold */
+        font-size: 14px;  /* Font size for the links */
+        transition: color 0.3s ease;  /* Smooth color change on hover */
+        display: block;
+        margin-bottom: 10px;
+    }
+    .Link3:hover{
+        color: #43a0ec;  /* Change the link color when hovered */
+
+
+  }
+  .headline3{
+    font-size: 20px; /* Adjust heading font size */
+    color: #006653; /* Dark grey text */
+    margin-top: 30px;
+    margin-bottom: 10px;
+    transform: translate(3%, 3%);
+    font-weight: bold;
+    margin-left: -20px;
+  }
+  .Link4{
+    color: #0077cc;  /* Link text color */
+    font-weight: bold;  /* Make the link text bold */
+    font-size: 14px;  /* Font size for the links */
+    transition: color 0.3s ease;  /* Smooth color change on hover */
+    display: block;
+    margin-bottom: 10px;
+}
+.Link4:hover{
+color: #43a0ec;  /* Change the link color when hovered */
+}
+.Link5{
+    color: #0077cc;  /* Link text color */
+    font-weight: bold;  /* Make the link text bold */
+    font-size: 14px;  /* Font size for the links */
+    transition: color 0.3s ease;  /* Smooth color change on hover */
+    display: block;
+    margin-bottom: 10px;
+}
+.Link5:hover{
+    color: #43a0ec;  /* Change the link color when hovered */
+}
+.Link6{
+    color: #0077cc;  /* Link text color */
+    font-weight: bold;  /* Make the link text bold */
+    font-size: 14px;  /* Font size for the links */
+    transition: color 0.3s ease;  /* Smooth color change on hover */
+    display: block;
+    margin-bottom: 10px;
+}
+.Link6:hover{
+    color: #43a0ec;  /* Change the link color when hovered */
+}
+
+
+  .headline4{
+    font-size: 20px; /* Adjust heading font size */
+    color: #006653; /* Dark grey text */
+    margin-top: 30px;
+    margin-bottom: 10px;
+    transform: translate(3%, 3%);
+    font-weight: bold;
+    margin-left: -20px;
+  }
+.Link7{
+    color: #0077cc;  /* Link text color */
+    font-weight: bold;  /* Make the link text bold */
+    font-size: 14px;  /* Font size for the links */
+    transition: color 0.3s ease;  /* Smooth color change on hover */
+    display: block;
+    margin-bottom: 10px;
+}
+.Link7:hover{
+    color: #43a0ec;  /* Change the link color when hovered */
+}
+.Link8{
+    color: #0077cc;  /* Link text color */
+    font-weight: bold;  /* Make the link text bold */
+    font-size: 14px;  /* Font size for the links */
+    transition: color 0.3s ease;  /* Smooth color change on hover */
+    display: block;
+    margin-bottom: 10px;
+}
+.Link8:hover{
+    color: #43a0ec;  /* Change the link color when hovered */
+}
+.Link9{
+    color: #0077cc;  /* Link text color */
+    font-weight: bold;  /* Make the link text bold */
+    font-size: 14px;  /* Font size for the links */
+    transition: color 0.3s ease;  /* Smooth color change on hover */
+    display: block;
+    margin-bottom: 10px;
+}
+.Link9:hover{
+    color: #43a0ec;  /* Change the link color when hovered */
+}
+
+  .headline5{
+    font-size: 20px; /* Adjust heading font size */
+    color: #006653; /* Dark grey text */
+    margin-top: 30px;
+    margin-bottom: 10px;
+    transform: translate(3%, 3%);
+    font-weight: bold;
+    margin-left: -20px;
+  }
+.Link10{
+    color: #0077cc;  /* Link text color */
+    font-weight: bold;  /* Make the link text bold */
+    font-size: 14px;  /* Font size for the links */
+    transition: color 0.3s ease;  /* Smooth color change on hover */
+    display: block;
+    margin-bottom: 10px;
+}
+.Link10:hover{
+    color: #43a0ec;  /* Change the link color when hovered */
+}
+.Link11{
+    color: #0077cc;  /* Link text color */
+    font-weight: bold;  /* Make the link text bold */
+    font-size: 14px;  /* Font size for the links */
+    transition: color 0.3s ease;  /* Smooth color change on hover */
+    display: block;
+    margin-bottom: 10px;
+}
+.Link11:hover{
+    color: #43a0ec;  /* Change the link color when hovered */
+}
+
+
+  .headline6{
+    font-size: 20px; /* Adjust heading font size */
+    color: #006653; /* Dark grey text */
+    margin-top: 30px;
+    margin-bottom: 10px;
+    margin-left: -70px;
+    transform: translate(10%, 10%);
+    font-weight: bold;
+    display: block;
+    
+    
+  }
+.Link12{
+    color: #0077cc;  /* Link text color */
+    font-weight: bold;  /* Make the link text bold */
+    font-size: 14px;  /* Font size for the links */
+    transition: color 0.3s ease;  /* Smooth color change on hover */
+    display: block;
+    margin-bottom: 10px;
+    
+}
+.Link12:hover{
+    color: #43a0ec;  /* Change the link color when hovered */
+}
+
+
+  .headline7{
+    font-size: 20px; /* Adjust heading font size */
+    color: #006653; /* Dark grey text */
+    margin-top: 30px;
+    margin-bottom: 10px;
+    transform: translate(3%, 3%);
+    font-weight: bold;
+    margin-left: -20px;
+    display: block;
+
+  }
+  .Link13{
+    color: #0077cc;  /* Link text color */
+    font-weight: bold;  /* Make the link text bold */
+    font-size: 14px;  /* Font size for the links */
+    transition: color 0.3s ease;  /* Smooth color change on hover */
+    display: block;
+    margin-bottom: 10px;
+  }
+  .Link13:hover{
+    color: #43a0ec;  /* Change the link color when hovered */
+  }
+  /* Footer CSS herunder */
+.image-container {
+    position: relative; /* This ensures the container serves as a reference for absolute positioning */
+    height: 225px
+   
+}
+
+.above-footer-image {
+    position: absolute;
+    height: 225px;
+    bottom: -925px; /* Adjust to place the image on the footer's top line */
+    left: 60%; /* Centers the image horizontally */
+    transform: translateX(130%); /* Adjusts the image to truly center */
+}
+
+.footer {
+    background-color: #ccc; 
+    display: flex;
+    justify-content: space-around;
+    padding: 60px 20px;
+    margin-top:250px;
+    position: relative;
+    width: 100%;
+    max-width: 1400px;
+    margin: 5 auto;
+    
+    
+}
+
+.footer-box {
+    width: 20%;
+}
+
+.footer-overskrift {
+    font-size: 20px; 
+    margin-bottom: 30px;
+}
+
+.footer ul{
+margin-bottom: 20px;
+}
+
+.footer li {
+list-style: none;
+}
+
+.footer a {
+    color: black;
+}
+
+.footer-3 li {
+    margin-bottom: 10px;
+}
+
+.footer img {
+    position: absolute;
+    right: 0px;
+    top: -285px;
+    max-width: 250px;
+}
+ 
+  
+
+ 
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  .text1{
+    font-size: 22px;
+    color:#006653;
+    font-weight: bold;
+    margin-top: 10px;/* laver space mellem boksen og teksten*/
+    margin-left: 220px;
+  }
+  .text2{
+    font-size: 22px;
+    color:#006653;
+    font-weight: bold;
+    margin-top: -28px;/* laver space mellem boksen og teksten*/
+    margin-left: 620px;
+  }
+  .text3{
+    font-size: 22px;
+    color:#006653;
+    font-weight: bold;
+    margin-top: -28px;/* laver space mellem boksen og teksten*/
+    margin-left: 975px;
+  }
+
+  

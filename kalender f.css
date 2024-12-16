@@ -144,129 +144,96 @@ body {
         display: flex;
     }
 }
-   
- 
  
 .logo {
     display: flex; /* Gør logo bliver til flex, bliver i navbar og er lige med links.  */
     align-items: center; /* Centrer logo på små skærme */
 }
- 
-/* Image Section Styling */
-    .tøj {
-        width: 100%; /* Ensures the image takes up the full width of its container */
-        height: 470px; /* Sets a fixed height for the image */
-        margin: 2px 0; /* Adds some space around the image */
-        object-fit: cover; /* Ensures the image covers the area without distorting */
-        object-position: none; /* Centers the image within the box */
-    
-    }
-
-    .overlay {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 0%;
-        height: 100%;
-        background: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
-      }
-
+.image{
+    width: 1340px;
+    height: 500px;  
+    margin: 2px 0;
+}
+.overlay {
+    position: absolute;
+    top: 14%;
+    left: 0;
+    width: 100%;
+    height: 75%;
+    background-color: rgba(0, 0, 0, 0.5); /* Dark overlay */
+}
 .heading {
     position: absolute; /* Position it absolutely within the parent */
-    top: 50%; /* Center it vertically */
-    left: 37%; /* Center it horizontally */
+    top: 55%; /* Center it vertically */
+    left: 25%; /* Center it horizontally */
     transform: translate(-50%, -50%); /* Adjust for exact centering */
     color: white; /* Text color */
     font-size: 3.5rem; /* Adjust font size as needed */
 } 
-
 .text {
-    font-size: 30px; /* Adjust heading font size */
-    color: #006653; /* Dark grey text */
-    margin-top: 150px;
-    transform: translate(3%, 3%);
-    font-weight: bold;
-
-}
-
-.subheading {
-    font-size: 20px; /* Adjust heading font size */
-    color: #333; /* Dark grey text */
-    margin-top: 150px;
-    transform: translate(3%, 3%);
-    margin: 2px 0;
-    margin-top: 20px;
-    line-height: 1.5;
-
-}
-.pige{
-    position: flex;
-            width: 510px; /* Sætter billedets bredde til 200px */
-            height: 366px; /* Sætter billedets højde til 200px */
-            object-fit: cover; /* Sørger for at billedet dækker hele containeren uden at blive forvrænget */
-            border-radius: 25px; /* Tilføjer rundede hjørner */
-            margin-left: 815px;
-            display: block;
-            margin-top: -490px;
-        }
-.text2{
     font-size: 30px; /* Adjust heading font size */
     color: #006653; /* Dark grey text */
     margin-top: 200px;
     transform: translate(3%, 3%);
     font-weight: bold;
-    margin-left: 650px;
-    
-    
+    margin-left: 100px;
 }
-.subheading2{
-    font-size: 20px; /* Adjust heading font size */
-    color: #333; /* Dark grey text */
-    margin-top: 150px;
-    transform: translate(3%, 3%);
-    margin: 2px 0;
-    margin-top: 20px;
-    margin-left: 650px;
-    line-height: 1.5;
+.text1{
+    margin: 20px 0;
+    line-height: 3;
+    margin-left: 135px;
 }
-.Legetøj{
-position: flex;
-            width: 510px; /* Sætter billedets bredde til 200px */
-            height: 500px; /* Sætter billedets højde til 200px */
-            object-fit: cover; /* Sørger for at billedet dækker hele containeren uden at blive forvrænget */
-            border-radius: 25px; /* Tilføjer rundede hjørner */
-            margin-left: 50px;
-            display: block;
-            margin-top: -165px;
-            
-        }
- /* Footer CSS herunder */
- .image-container {
+.image-under-text1{
+    height: 595px;
+    width: 842px;
+    border-radius: 40px;
+    margin-top: 40px;
+    margin-left: 120px;
+}
+
+.my-button{
+    margin-top: 20px;  /* Moves the button down by 40px (increase or decrease as needed) */
+    background-color: #ffffff;  /* Button background color */
+    color: rgb(0, 0, 0);  /* Button text color */
+    padding: 10px 20px;  /* Padding for the button */
+    border-bottom: 3px solid black;  /* Black bottom border */
+    border-radius: 5px;  /* Rounded corners */
+    font-size: 16px;  /* Font size */
+    cursor: pointer;  /* Change cursor to pointer on hover */
+    transition: background-color 0.3s ease;  /* Smooth transition on hover */
+    display: block;  /* Makes the button a block-level element */
+    margin-left: 130px;  /* Centers the button horizontally */
+    margin-right: auto;  /* Centers the button horizontally */
+}
+
+.my-button:hover{
+    background-color: #006653;
+    transform: scale(1.05); /* Slightly enlarge button when hovered */
+}
+.image-container {
     position: relative; /* This ensures the container serves as a reference for absolute positioning */
-    height: 225px
+    text-align: left; /* Gør teksten står horizontalt */
+    margin: 0; /* Remove any margins to reset positioning */
    
 }
 
 .above-footer-image {
-    position: absolute;
     height: 225px;
-    bottom: -278px; /* Adjust to place the image on the footer's top line */
+    position: relative; 
+    bottom: -133px; /* Adjust to place the image on the footer's top line */
     left: 60%; /* Centers the image horizontally */
     transform: translateX(130%); /* Adjusts the image to truly center */
 }
+
+/* Footer CSS herunder */
 
 .footer {
     background-color: #ccc; 
     display: flex;
     justify-content: space-around;
-    padding: 60px 20px;
-    margin-top:250px;
+    padding: 60px 0px;
+    margin-top: 100px;
     position: relative;
-    width: 100%;
-    max-width: 1400px;
-    margin: 5 auto;
-    
-    
 }
 
 .footer-box {
@@ -300,5 +267,3 @@ list-style: none;
     top: -285px;
     max-width: 250px;
 }
- 
-        
