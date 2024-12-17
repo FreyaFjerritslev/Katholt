@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="da">
+ 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation Bar</title>
+    <link rel="stylesheet" href="indskrivning, udmeldelse.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light+Two&display=swap" rel="stylesheet">
+    
+    
+
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <a href="#">
+                <img src="foto/Fotos/Artboard 1.png" alt="Logo">
+                
+                  </div>
+            
+            </a>
+        </div>
+   
+        <!-- Navigation Links (De synlige 4 links) -->
+        <ul class="visible-links">
+            <li><a href="#Forside">Forside</a></li>
+            <li><a href="#OmKatholt">Om Katholt</a></li>
+            <li><a href="#Børnehave">Børnehave</a></li>
+            <li><a href="#Fritidshjem">Fritidshjem</a></li>
+        </ul>
+   
+        <!-- Burgermenu -->
+        <div class="burger">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+   
+        <!-- Skjulte links (i burgerbaren) -->
+        <ul class="hidden-links">
+            <li><a href="#IndskrivningUdmeldelseogTakster">Indskrivning, Udmeldelse og Takster</a></li>
+            <li><a href="#Stamkort/Børneintranet">Stamkort/Børneintranet</a></li>
+            <li><a href="#Pædagogisktilsyn">Pædagogisk tilsyn</a></li>
+        </ul>
+    </nav>
+   
+</html>
+ 
+   <!-- JavaScript for Burger Menu -->
+   <script>
+// Vælg burgermenu og hidden-links
+const burger = document.querySelector('.burger');
+const hiddenLinks = document.querySelector('.hidden-links');
+ 
+// Klik på burgermenuen for at vise/skjule de skjulte links
+burger.addEventListener('click', () => {
+    hiddenLinks.classList.toggle('active');
+    burger.classList.toggle('open');
+});
+</script>
+<img class="image" src="foto/Fotos/glad pige.jpg" alt="beskrivelse af billede">
+<div class="overlay"></div> <!--Gør billedet mørker-->
+
+<h1 class="heading">Indskrivning og udmeldelse</h1>
+
+<p class="text"> Børnehaven</p>
+
+<p class="text2">Udfyld nedenstående skema og send det til <br>os på 
+mail eller aflevere den hos os:</p>
+
+<a href="mailto:ulla@boernegaardenkatholt.dk" class="email-link">ulla@boernegaardenkatholt.dk</a>
+
+
+<h2 class="headline2">Indmeldelse</h2>
+<a href="https://docs.google.com/document/d/1j_N4-Ih-P6M63AGCZxSMK-WJoVJ4Rfj7/edit?usp=sharing&ouid=107214318048528139544&rtpof=true&sd=true" 
+class="link1" download>Indmeldelse til børnehaven</a>
+
+<h3 class="headline3">Udmeldelse</h3>
+<a href="https://docs.google.com/document/d/1DmjBfc8OriI8T3LSxh9WIE-7pJsmoIDS/edit?usp=sharing&ouid=107214318048528139544&rtpof=true&sd=true"
+class="link2" download=>Udmeldelse til børnehaven</a>
+
+<p class="text3">Fritidshjemmet</p>
+<p class="text4">Udfyld nedenstående skema og send det til <br>os på 
+mail eller aflevere den hos os:</p>
+
+<a href="mailto:ulla@boernegaardenkatholt.dk" class="email-link2">ulla@boernegaardenkatholt.dk</a>
+
+<h4 class="headline4">Indmeldelse</h4>
+<a href="https://docs.google.com/document/d/1uJawTifH3KrIWmsSCt0KWUycX6WKsLdI/edit?usp=sharing&ouid=107214318048528139544&rtpof=true&sd=true" 
+class="link3" download>Indmeldelse til fritidshjemmet</a>
+
+<h5 class="headline5">Udmeldelse</h5>
+<a href="https://docs.google.com/document/d/14NAiQxhZ1Nc3ZX_WUGM_vTlie0ReQ5bp/edit?usp=sharing&ouid=107214318048528139544&rtpof=true&sd=true" 
+class="link4" download>Udmeldelse til fritidshjemmet</a>
+
+
+<p class="text5">Vejledning</p>
+
+<a href="https://www.boernegaardenkatholt.dk/filer/1955vejledning-til-stamkort-boerneintranet-samt-beskedservice.pdf" 
+class="link5" download>Vejledning til stamkort/børneintranet samt beskedservice</a></h2>
+
+<!-- Alt nedestående er til footeren-->
+
+
+<div class="footer">
+    <img src="foto/Fotos/Figur.E.png" alt="Image" class="above-footer-image"> <!--Billedet til over footeren-->
+
+<div class="footer-box footer-1">
+
+<h5 class="footer-overskrift">Kontaktoplysninger</h5>
+
+<ul>
+    <li><b>Børnegården Katholt</b></li>
+    <li>Amagervej 140-142, 6900 Skjern</li>
+</ul>
+
+<ul>
+    <li><b>Telefon Børnehave:</b> 34789011</li>
+    <li><b>Telefon Fritidshjem:</b> 34781266</li>
+    
+</ul>
+
+<ul>
+    <li><b>E-mail:</b> Martin@Børnegården.dk</li>
+</ul>
+
+</div>
+
+<div class="footer-box footer-2">
+<h5 class="footer-overskrift">Åbningstider</h5>
+
+<ul>
+    <li><b>Åbningstider i børnehaven</b></li>
+    <li>Mandag-torsdag fra kl. 6.30-16.30</li>
+    <li>Fredag 6.30-16.00</li>
+</ul>
+
+<ul>
+    <li><b>Åbningstider i fritidshjemmet</b></li>
+    <li>Mandag-torsdag fra 6.30-7.45 og 12.50-16.30</li>
+    <li>Fredag fra 6.30-7.45 og 12.50-16.00</li>
+</ul>
+
+<ul>
+    <li><b>Lukkedage</b></li>
+    <li>Lørdag-søndag</li>
+</ul>
+
+</div>
+
+<div class="footer-box footer-3">
+    <h5 class="footer-overskrift">Læs mere</h5>
+
+    <ul>
+        <li><a href="">Om Katholt</a></li>
+        <li><a href="">Børnehav</a></li>
+        <li><a href="">Fritidshjem</a></li>
+        <li><a href="">Indskrivning, udmeldelse og takster</a></li>
+        <li><a href="">Stamkort/børneintranet</a></li>
+        <li><a href="">Pædagogisk tilsyn</a></li>
+    </ul>
+    
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+ 
+
+   
