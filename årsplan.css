@@ -215,6 +215,7 @@ body {
     font-weight: bold;
     float: right;
     margin-left: 5px;
+    
 }
 
 .active-dropdown:after {
@@ -227,6 +228,8 @@ body {
     max-height: 0; /* Collapsed by default */
     overflow: hidden;
     transition: all 0.2s ease;
+    margin-left: 220px;
+    line-height: 40px;
 }
 
 .dropdown-button:last-child {
