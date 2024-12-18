@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="da">
+ 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation Bar</title>
+    <link rel="stylesheet" href="store grupper.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light+Two&display=swap" rel="stylesheet">
+    
+  <link rel="stylesheet" href="årsplan.css">
+  <title>Dropdown Example</title>
+    
+
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <a href="#">
+                <img src="Fotos/Artboard 1.png" alt="Logo">
+                
+                  </div>
+            
+            </a>
+        </div>
+   
+       <!-- Navigation Links (De synlige 4 links) -->
+       <ul class="visible-links">
+        <li><a href="../Forside/Forside.html">Forside</a></li>
+        
+        <!-- Dropdown-menu for "Om Katholt" -->
+        <li class="dropdown">
+            <a href="../Om Katholt/Om-Katholt.html">Om Katholt</a>
+            <ul class="sub-menu">
+                <li><a href="../Om Katholt/Ferie-lukkedage.html">Ferie-lukkedage</a></li>
+                <li><a href="../Om Katholt/Forældrebestyrelsen-i-Katholt.html">Forældrebestyrelsen</a></li>
+                <li><a href="../Om Katholt/Hverdagen i Katholt.html">Hverdagen</a></li>
+                <li><a href="../Om Katholt/Om-Katholt.html">Om-Katholt</a></li>
+                <li><a href="../Om Katholt/praktiske links.html">praktiske-links</a></li>
+                <li><a href="../Om Katholt/studerende-praktik.html">studerende-praktik</a></li>
+                <li><a href="../Om Katholt/værdier.html">værdier</a></li>
+            </ul>
+        </li>
+    
+        <!-- Dropdown-menu for "Børnehave" -->
+        <li class="dropdown">
+            <a href="Ny i børnehaven.html">Børnehave</a>
+            <ul class="sub-menu">
+                <li><a href="årsplan.html">Årsplan</a></li>
+                <li><a href="Ny i børnehaven.html">Ny i børnehaven</a></li>
+                <li><a href="Praktiske oplysninger-b.html">Praktiske oplysninger</a></li>
+                <li><a href="selvbetjening børnehave.html">Selvbetjening</a></li>
+                <li><a href="store grupper.html">Store grupper</a></li>
+            </ul>
+        </li>
+    
+        <!-- Dropdown-menu for "Fritidshjem" -->
+        <li class="dropdown">
+            <a href="../Ny i fritidshjem/ny fritidshjem.html">Fritidshjem</a>
+            <ul class="sub-menu">
+                <li><a href="../Ny i fritidshjem/Aktiviteter-fritidshjemmet.html">Aktiviteter</a></li>
+                <li><a href="../Ny i fritidshjem/kalender f.html">Kalender</a></li>
+                <li><a href="../Ny i fritidshjem/ny fritidshjem.html"> Ny i Fritidshjem</a></li>
+                <li><a href="../Ny i fritidshjem/Ny-side.html">Praktiske-oplysninger</a></li>
+                <li><a href="../Ny i fritidshjem/selvbetjening for fritidshjem.html">selvbetjening</a></li>
+            </ul>
+        </li>
+    </ul>
+    
+
+    <!-- Burgermenu -->
+    <div class="burger">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+
+    <!-- Skjulte links (i burgerbaren) -->
+    <ul class="hidden-links">
+        <li><a href="../Indskrivning, Udmeldelse og Takster/indskrivning, udmeldelse.html">Indskrivning, Udmeldelse og Takster</a></li>
+        <li><a href="../Stamkort/Stamkort-Børneintra.html">Stamkort/Børneintranet</a></li>
+        <li><a href="../Pædagogisk tilsyn/pædagogisk tilsyn.html">Pædagogisk tilsyn</a></li>
+        <li><a href="../Priser/priser.html">Priser</a></li>
+    </ul>
+</nav>
+   
+   
+</html>
+ 
+   <!-- JavaScript for Burger Menu -->
+   <script>
+// Vælg burgermenu og hidden-links
+const burger = document.querySelector('.burger');
+const hiddenLinks = document.querySelector('.hidden-links');
+ 
+// Klik på burgermenuen for at vise/skjule de skjulte links
+burger.addEventListener('click', () => {
+    hiddenLinks.classList.toggle('active');
+    burger.classList.toggle('open');
+});
+</script>
+
+<img class="image" src="Fotos/farveblyant.jpg" alt="blyanter">
+<div class="overlay"></div> <!--Gør billedet mørker-->
+
+<h1 class="heading">Årsplan</h1>
+
+<p class="text"> Børnehavens årsplan 2024</p>
+
+  <div class="row-drop">
+      <button class="dropdown-button">Januar:</button>
+      <div class="dropdown-panel">
+        <p>2/1 1. dag efter juleferie - fælles i børnehaven <br>
+             17/1 Musik skolen giver 1. lektion i rød, grøn og blå gruppe fra kl. 9.00 - 10.30
+        <br> 24/1 Musik skolen giver 2. lektion i rød, grøn og blå gruppe fra kl. 9.00 - 10.30
+    <br>     31/1 Musik skolen giver 3. lektion i rød, grøn og blå gruppe fra kl. 9.00 - 10.30</p>
+      </div>
+      <button class="dropdown-button">Februar:</button>
+      <div class="dropdown-panel">
+        <p> Uge 6. Fastelavnsaktiviteter <br>
+            Uge 9. Fastelavn - vi slår katten af tønden. <br>
+            Uge 6. Planlægning af vinterferien for børnehave - fritidshjemsbørn <br>
+            Uge 7. Fællespasning foregår i børnehaven</p>
+      </div>
+      <button class="dropdown-button">Marts:</button>
+      <div class="dropdown-panel">
+        <p>4/3 Grøns maddag <br>
+            7/3 Blås maddag <br>
+            8/3 Røds maddag <br>
+            Uge 12 Påskeaktiviteter <br>
+            21/3 Fotografering kl. 9.00 - 13.00. <br>
+            22/3 Påskeløb for alle </p>
+      </div>
+      <button class="dropdown-button">April:</button>
+      <div class="dropdown-panel">
+        <p>Tekst</p>
+      </div>
+      <div class="row-drop">
+        <button class="dropdown-button">Maj:</button>
+        <div class="dropdown-panel">
+          <p>Tekst</p>
+        </div>
+        <button class="dropdown-button">Juni:</button>
+        <div class="dropdown-panel">
+          <p>Tekst</p>
+        </div>
+        <button class="dropdown-button">Juli:</button>
+        <div class="dropdown-panel">
+          <p>Tekst</p>
+        </div>
+        <button class="dropdown-button">August:</button>
+        <div class="dropdown-panel">
+          <p>Tekst</p>
+        </div>
+        <div class="row-drop">
+            <button class="dropdown-button">September:</button>
+            <div class="dropdown-panel">
+              <p>Tekst</p>
+            </div>
+            <button class="dropdown-button">Oktober:</button>
+            <div class="dropdown-panel">
+              <p>Tekst</p>
+            </div>
+            <button class="dropdown-button">November:</button>
+            <div class="dropdown-panel">
+              <p>Tekst</p>
+            </div>
+            <button class="dropdown-button">December:</button>
+            <div class="dropdown-panel">
+              <p>Tekst</p>
+            </div>
+  </div>
+</body>
+</html>
+
+
+  <script>
+    document.querySelectorAll('.dropdown-button').forEach(button => {
+      button.addEventListener('click', () => {
+        const isActive = button.classList.contains('active-dropdown');
+        document.querySelectorAll('.dropdown-button').forEach(btn => {
+          btn.classList.remove('active-dropdown');
+          btn.nextElementSibling.style.maxHeight = null;
+        });
+        if (!isActive) {
+          button.classList.add('active-dropdown');
+          const panel = button.nextElementSibling;
+          panel.style.maxHeight = panel.scrollHeight + "px";
+        }
+      });
+    });
+  </script>
+  
+  <!-- Alt nedestående er til footeren-->
+
+ <div class="image-container">
+  <img src="Fotos/k.png" alt="Image" class="above-footer-image"> 
+ </div>
+
+<div class="footer">
+<div class="footer-box footer-1">
+
+<h5 class="footer-overskrift">Kontaktoplysninger</h5>
+
+<ul>
+  <li><b>Børnegården Katholt</b></li>
+  <li>Amagervej 140-142, 6900 Skjern</li>
+</ul>
+
+<ul>
+  <li><b>Telefon Børnehave:</b> 34789011</li>
+  <li><b>Telefon Fritidshjem:</b> 34781266</li>
+  
+</ul>
+
+<ul>
+  <li><b>E-mail:</b> Martin@Børnegården.dk</li>
+</ul>
+
+</div>
+
+<div class="footer-box footer-2">
+<h5 class="footer-overskrift">Åbningstider</h5>
+
+<ul>
+  <li><b>Åbningstider i børnehaven</b></li>
+  <li>Mandag-torsdag fra kl. 6.30-16.30</li>
+  <li>Fredag 6.30-16.00</li>
+</ul>
+
+<ul>
+  <li><b>Åbningstider i fritidshjemmet</b></li>
+  <li>Mandag-torsdag fra 6.30-7.45 og 12.50-16.30</li>
+  <li>Fredag fra 6.30-7.45 og 12.50-16.00</li>
+</ul>
+
+<ul>
+  <li><b>Lukkedage</b></li>
+  <li>Lørdag-søndag</li>
+</ul>
+
+</div>
+
+<div class="footer-box footer-3">
+  <h5 class="footer-overskrift">Læs mere</h5>
+
+  <ul>
+      <li><a href="">Om Katholt</a></li>
+      <li><a href="">Børnehav</a></li>
+      <li><a href="">Fritidshjem</a></li>
+      <li><a href="">Indskrivning, udmeldelse og takster</a></li>
+      <li><a href="">Stamkort/børneintranet</a></li>
+      <li><a href="">Pædagogisk tilsyn</a></li>
+  </ul>
+  
+</div>
+</div>
